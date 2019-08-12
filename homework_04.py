@@ -19,7 +19,48 @@ while x < y:
     day += 1
 print("На {} день".format(day))
 
-#2) -.
+#2)
+enter = 1
+counter = 0
+summ = 0
+composition = 1
+mmax = 0
+index_of_max = 0
+second_largest = 0
+greatest_num = 0
+even_counter = 0
+odd_counter = 0
+while enter != 0:
+    enter = int(input('Введите числа: '))
+    if enter < 0:
+        continue
+    elif enter == 0:
+        break
+    counter += 1
+    summ += enter
+    composition *= enter
+    if enter > mmax:
+        second_largest = mmax
+        greatest_num = 1
+        mmax = enter
+        index_of_max = counter
+    elif enter == mmax:
+        greatest_num += 1
+    if enter/2 == enter//2:
+        even_counter += 1
+    else:
+        odd_counter += 1
+print()
+print('Кол-во чисел -', counter)
+print('Сумма чисел -', summ)
+print('Произведение чисел -', composition)
+print('Среднее арифметическое -', summ/counter)
+print('Наибольшее число -', mmax)
+print('Номер наибольшего числа -', index_of_max)
+print('Кол-во четных -', even_counter)
+print('Кол-во нечетных -', odd_counter)
+print('Второе наибольшее число -', second_largest)
+print('Кол-во наибольших чисел -', greatest_num)
 
 #3) Задачка про выведения чисел по возрастанию от A до B если A < B или по убыванию в противном случае.
 A = int(input("Введите первое число: "))

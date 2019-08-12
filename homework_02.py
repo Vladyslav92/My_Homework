@@ -29,8 +29,8 @@ print("The next number for the number {} is: {}".format(num, num + 1)
       + "\nThe pervious number for the number {} is: {}".format(num, num - 1))
 
 #13. Задание.
-members = int(input("Кол-во Учеников в первом классе: "))
-members2 = int(input("Кол-во Учеников во втором классе: "))
-members3 = int(input("Кол-во Учеников в третем классе: "))
-sum = members + members2 + members3
-print("Для {} Учеников необходимо {} парт".format(sum, sum // 2))
+class1 = int(input("Кол-во Учеников в первом классе: "))
+class2 = int(input("Кол-во Учеников во втором классе: "))
+class3 = int(input("Кол-во Учеников в третем классе: "))
+sum = round((class1 + class2 + class3)/2)
+print("Количество парт: ", sum)

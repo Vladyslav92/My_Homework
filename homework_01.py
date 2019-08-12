@@ -32,20 +32,35 @@
 #Вывел ошибку SytaxError: not a chance
 #В интернете пишут что это шутка)
 
-#4.Я смог вывести звездочками свое имя с помощью функции print.
-print("****      *         **       *****\n"
-      "*   *    * *       *  *      *   *\n"
-      "****    *   *     ******   *********\n"
-      "*   *  *     *   *      *  *       *\n"
-      "****  *       * *        * *       *")
+#4.
+print('******\t    **  \t    **\t      *****\n'
+      '*    * \t   *  * \t   *  *  \t  *   *\n'
+      '*****  \t  *    *\t  ******\t*********\n'
+      '*    * \t *      *\t *      *\t*       *\n'
+      '******\t*        *\t*        *\t*       *\n')
 
-#5. Не справился...
+#5.
+print('Escape sequences:')
+print('\\a\tBell (alert)')
+print('\\b\tBackspace')
+print('\\n\tNew line')
+print('\\t\tHorizontal tab')
+print('\\\\\tBackslash \\')
+print('\\”\tDouble quotation mark “')
+print('\\’\tSingle quotation mark ‘')
 
 #6.
-print(10 + 10)  #20
-print(10 // 10)  #1
-print(10 % 10)  #0
-print(130 ^ 150)  #20
+x = int(input("Введите число: "))
+y = int(input("Введите число: "))
+summ = x + y
+division = x // y
+balance = x % y
+power = x ** y
+print(x, y)
+print('Сумма {} и {} = {}'.format(x, y, summ))
+print('Результат деления {} и {} = {}'.format(y, x, division))
+print('Остаток от деления {} и {} = {}'.format(y, x, balance))
+print('Степень числа {} и {} = {}'.format(x, y, power))
 
 #7.
 a = 5
@@ -53,4 +68,8 @@ b = 10
 c = 20
 print(a + b + c)  #35
 
-#8. Не справился...
+#8.
+K1 = int(input("Введите первый катет: "))
+K2 = int(input("Введите второй катет: "))
+print('Площадь: {}'.format(K1 * K2 / 2))
+
