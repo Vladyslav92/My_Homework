@@ -58,3 +58,4 @@ for key, item in vocabulary1.items():
     for item2 in item:
         vocabulary2[item2] = key
 pprint(vocabulary2)
+
